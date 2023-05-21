@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ 
+  .sticky {
+        position: sticky;
+        bottom: 0;
+        padding: 1px;
+        background-color: #cae8ca;
+        border: 2px solid #4CAF50;
+      }
+  </style>
+<title>Welcome To KABADI.COM</title>
+<link rel="stylesheet" href="teststyle.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,900;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div class="header">
+    
+  <nav>
+    <div class="nav-links" id="nav-links">
+        <i class="fa fa-window-close-o" onclick="hideMenu()"></i>
+          <ul>
+              <li>   <a href="">HOME </a></li>
+              <li>   <a href="">ABOUT </a></li>
+              <li>   <a href="">CONTACT </a></li>
+              <li>   <a href="">ORDER </a></li>
+              </li>
+          </ul>
+
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+  </nav>
+    
+  <div class="text-box"> 
+      <h1>Biggest garbage/waste bayer and recycler in UP</h1>
+      <div class="row">
+        <div class="course-col">
+       <h3>Garbage </h3>
+       <div class="icon-state">
+         <i class="fa fa-trash fa-5x" ></i>
+    </div>
+        </div>
+        <div class="course-col">
+          <h3>Pickup  </h3>
+          <div class="icon-state">
+          <i class="fa fa-truck fa-5x"></i>
+            
+         </div>
+           </div>
+           <div class="course-col">
+              <h3>Recycle </h3>
+              <div class="icon-state">
+                <i class="fa fa-recycle fa-5x" ></i>
+             </div>
+               </div>
+    </div> 
+  <a href="" class="hero-btn">SELL NOW </a>
+    </div>
+  </div>
+
+
+
+ 
+
+  <!--section course -->
+  <section class="course">
+      <h1>How we works..</h1>
+      <p>Simple and One click order Booking. You can place your<br> order using our super user-friendly website as well as mobile application.</p>
+
+      <div class="row">
+          <div class="course-col">
+         <h3>Place order </h3>
+         <p>Place order using our website or moible app</p>
+          </div>
+          <div class="course-col">
+            <h3>Confirm order</h3>
+            <p>Customer repersentative will call back and confirm the order</p>
+             </div>
+             <div class="course-col">
+                <h3>Pickup order </h3>
+                <p>Our pickup team will reach to your door and pickup the scrap and make the payment </p>
+                 </div>
+      </div>
+  </section>
+
+  <!--Campous section-->
+  <section class="campous">
+
+      <h1>Scrap what we purchase</h1>
+     
+      <div class="row">
+      <div class="campous-col">
+       <img src="img/garbagebin.jpg"> 
+       <div class="layer">
+           <h3>Garbage</h3>
+       </div>
+      </div>
+      <div class="campous-col">
+        <img src="img/garbagebin1.jpeg"> 
+        <div class="layer">
+            <h3>Garbage</h3>
+        </div>
+       </div>
+       <div class="campous-col">
+        <img src="img/garbagebin2.jpeg"> 
+        <div class="layer">
+            <h3>Garbage</h3>
+        </div>
+       </div>
+    </div>
+ </section>
+
+
+<!--book your order section-->
+<section class="footer">
+    <h4>About Us</h4>
+    <div class="icon">
+        <i class="fa fa-facebook" ></i> 
+        <i class="fa fa-twitter" ></i> 
+        <i class="fa fa-instagram" ></i> 
+        <i class="fa fa-linkedin" ></i> 
+     </div>
+     <div class="whatsappIcon">
+      <a href="https://api.whatsapp.com/send?phone=+918808611191&text=Hi,+need+help!" target="_blank">  <img src="img/whatsapp.png"></a> </div>
+    <p>We all <i class="fa fa-heart-o" ></i> to clean our city </p>
+  
+</section>
+  <!---java script Toggle menu-->
+  <script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+
+
+    var navLinks=  document.getElementById("nav-links");
+    function showMenu(){
+        navLinks.style.right="0";
+    }
+    function hideMenu(){
+        navLinks.style.left="-200px"
+    }
+  </script>
+
+  
+</body>
+</html>
